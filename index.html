@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  <title>cuestionario sistemas</title>
+  <title>encuestas sistemas</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,7 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="funciones.js"></script>
+    <script src="datos.js"></script>
     <link rel="stylesheet" href="stilos.css">
 
 </head>
@@ -21,8 +21,8 @@
             <h1> formulario tercer semestre</h1>
         </div>
         <nav class="menu">
+            <a class="link" href="login_admin.html">admin</a>
             <a class="link" href="#">inicio</a>
-            <a class="link" href="#">formulario</a>
             <a class="link" href="#">ayuda</a>
             <a class="link" href="#">información</a>
         </nav>
@@ -34,46 +34,47 @@
     <!-- place footer here -->
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+  
 
   <form action="" method="post">
     <div class="forms-grupos">
         <label ><b>Nombre </b></label>
-        <input type="text" name="name-label" id="Nombre" placeholder="ingresa tu nombre" required>
+        <input type="text" name="name-label" id="nombre" placeholder="ingresa tu nombre" required>
     </div>
     <div class="forms-grupos">
-        <label ><b>Nombre </b></label>
-        <input type="text" name="name-label" id="Nombre" placeholder="ingresa tu nombre" required>
+        <label ><b>semestre </b></label>
+        <input type="number" name="name-label" id="semestre" placeholder="ingresa tu semesetre" required min="1" max="11">
     </div>
     <div class="forms-grupos">
-        <label ><b>Nombre </b></label>
-        <input type="text" name="name-label" id="Nombre" placeholder="ingresa tu nombre" required>
+        <label ><b>segun usted cual es el mejor lenguage para programar </b></label>
+        <input type="text" name="name-label" id="lenguage" placeholder="ingresa tu respuesta" required>
     </div>
     <div class="forms-grupos">
-        <p><b>describe tu rol de ocupacion</b></p>
-        <label >
-            <select name="usuario-opcion" id="select" class="selectop">
-                <option disabled selected value>selecciona tu rol</option>
-                <option value="estudiante"> Estudiante</option>
-                <option value="Profesor">profesor</option>
-            </select>
-        </label>
+        <label ><b>¿Qué te inspiró a estudiar ingeniería de sistemas? </b></label>
+        <input type="text" name="name-label" id="R1" placeholder="ingresa tu respuesta" required>
     </div>
     <div class="forms-grupos">
-        <p><b>¿tu interes es?</b></p>
-        <label>
-            <input type="checkbox" name="front-end" id="selection-user">
-            <b>front-end</b>
-        </label>
+        <label ><b>¿Cuál es tu lenguaje de programación favorito y por qué? </b></label>
+        <input type="text" name="name-label" id="R2" placeholder="ingresa tu respuesta" required>
+    </div>
+    <div class="forms-grupos">
+        <label ><b>¿Puedes describir un proyecto de programación en el que haya trabajado y de qué manera contribuyeste?</b></label>
+        <input type="text" name="name-label" id="R3" placeholder="ingresa tu respuiesta" required>
+    </div>
+    <div class="forms-grupos">
+        <label ><b>¿Cuál es tu enfoque preferido para abordar la resolución de problemas en el desarrollo de software?</b></label>
+        <input type="text" name="name-label" id="R4" placeholder="ingresa tu respuesta" required>
+    </div>
+    <div class="forms-grupos">
+        <label ><b>¿Cuál es tu rol en la institucion??</b></label>
+        <input type="text" name="name-label" id="selected" placeholder="ingresa tu respuesta" required>
+    </div>
+    <div class="forms-grupos">
+        <label ><b>¿Cuál es tu interes en la carrera?</b></label>
+        <input type="text" name="name-label" id="interes" placeholder="ingresa tu respuesta, ingeniero, tecnologo etc" required>
     </div>
     <div class="button">
-        <input type="submit" value="enviar" >
+        <input type="submit" value="enviar" id="btn-guardar" >
     </div>
 
   </form>
