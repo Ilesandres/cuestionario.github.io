@@ -26,6 +26,8 @@ function guardar() {
     };
 
     encuestas.push(encuesta);
+    
+    console.log(encuesta);
    
 
     
