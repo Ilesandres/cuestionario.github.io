@@ -48,10 +48,11 @@ function limpiarCampos() {
     document.getElementById("interes").value = "";
 }
 
+
 // Función para mostrar la encuesta 
 
 function mostrar() {
      document.getElementById("quest").innerHTML = encuestas;
-
+     console.log(encuestas);
     
 }
