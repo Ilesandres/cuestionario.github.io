@@ -54,7 +54,7 @@ function limpiarCampos() {
 
 function mostrar() {
     for(let i=0; i<encuestas.length; i++){
-     document.getElementById("quest").innerHTML = encuestas;
+     document.getElementById("quest").innerHTML += encuestas;
      console.log(encuestas);
      
     }
