@@ -2,7 +2,7 @@
 // Array para almacenar los datos de encuestas
 
 
-let encuestas = ["Andres","2"];
+let encuestas = [];
 
 
 // Función para guardar los datos de la encuesta
@@ -26,7 +26,6 @@ function guardar() {
     };
 
     encuestas.push(encuesta);
-    
     console.log(encuesta);
    
 
@@ -56,11 +55,34 @@ function limpiarCampos() {
 
 
 // Función para mostrar la encuesta 
-
+// Función para mostrar los datos de las encuestas
 function mostrar() {
-    for(let i=0; i<encuestas.length; i++){
-     document.getElementById("quest").innerHTML += encuestas[i];
-     console.log(encuestas[i]);
-     
+    var questElement = document.getElementById("quest");
+    questElement.innerHTML = ""; // Limpiar contenido previo
+
+    for (var i = 0; i < encuestas.length; i++) {
+        var encuesta = encuestas[i];
+        var encuestaHTML = `
+            <div class="encuesta">
+                <p><strong>Nombre:</strong> ${encuesta.nombre}</p>
+                <p><strong>Semestre:</strong> ${encuesta.semestre}</p>
+                <p><strong>Respuestas:</strong></p>
+                <ul>
+                    <li>${encuesta.respuestas[0]}</li>
+                    <li>${encuesta.respuestas[1]}</li>
+                    <li>${encuesta.respuestas[2]}</li>
+                    <li>${encuesta.respuestas[3]}</li>
+                    <li>${encuesta.respuestas[4]}</li>
+                    <li>${encuesta.respuestas[5]}</li>
+                    <li>${encuesta.respuestas[6]}</li>
+                </ul>
+            </div>
+        `;
+        questElement.innerHTML += encuestaHTML;
     }
 }
+
+// Llamada a la función para mostrar los datos cuando sea necesario
+// Por ejemplo, en un botón o evento
+
+
