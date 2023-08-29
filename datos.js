@@ -2,7 +2,7 @@
 // Array para almacenar los datos de encuestas
 
 
-let encuestas = ["Andres","2",];
+let encuestas = ["Andres","2"];
 
 
 // Función para guardar los datos de la encuesta
@@ -19,14 +19,16 @@ function guardar() {
         document.getElementById("interes").value
     ]
 
-let encuesta = {
-    nombre: nombre,
-    semestre: semestre,
-    respuestas: respuestas
-};
-   
+    let encuesta = {
+        nombre: nombre,
+        semestre: semestre,
+        respuestas: respuestas
+    };
 
     encuestas.push(encuesta);
+   
+
+    
 
     alert("Encuesta guardada con éxito");
     console.log(encuestas);
@@ -50,12 +52,13 @@ function limpiarCampos() {
     document.getElementById("interes").value = "";
 }
 
+
 // Función para mostrar la encuesta 
 
 function mostrar() {
     for(let i=0; i<encuestas.length; i++){
-     document.getElementById("quest").innerHTML += encuestas;
-     console.log(encuestas);
+     document.getElementById("quest").innerHTML += encuestas[i];
+     console.log(encuestas[i]);
      
     }
 }
