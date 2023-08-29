@@ -1,30 +1,57 @@
-let nombre = document.getElementById("nombre").value;
-let semestre = document.getElementById("semestre").value;
-let respuestas = [
-    document.getElementById("R0").value,
-    document.getElementById("R1").value,
-    document.getElementById("R2").value,
-    document.getElementById("R3").value,
-    document.getElementById("R4").value,
-    document.getElementById("selected").value,
-    document.getElementById("interes").value,
-    "Andres","casa1","Casa2"
-]
-/*
-let nombre = document.getElementById("nombre").value;
-let semestre = document.getElementById("semestre").value;
-let respuestas = [
-    document.getElementById("R0").value,
-    document.getElementById("R1").value,
-    document.getElementById("R2").value,
-    document.getElementById("R3").value,
-    document.getElementById("R4").value,
-    document.getElementById("selected").value,
-    document.getElementById("interes").value
-];*/
+<!doctype html>
+<html lang="es">
 
-let encuesta = {
-    nombre: nombre,
-    semestre: semestre,
-    respuestas: respuestas
-};
+<head>
+  <title>perfil</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="datos.js"></script>
+    <script src="validacion.js"></script>
+    <script src="login_users.js"></script>
+    <link rel="stylesheet" href="perfil.css">
+    
+</head>
+
+<body onload="usuario()">
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <header class="header">
+    <nav>
+      <div class="container-header">
+      <a href="index.html" onclick="logout()" class="a"> inicio</a>
+    </div>
+    </nav>
+     <h1 class="title">BIENBENIDO A DATOS GENERALES</h1>
+  </header>
+
+  
+
+   
+  <h2 class="subtitle" id="usuario2">user : </h2>
+  <button type="button" style="color: aqua; background:#0000;" onclick="mostrar()">respuestas</button>
+  <h4 id="user"></h4>
+  <div class="q" id="quest"></div>
+
+</body>
+
+</html>
