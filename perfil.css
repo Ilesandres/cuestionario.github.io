@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(https://www.roc21.com/blog/wp-content/uploads/2012/09/fondos-para-pa%CC%81ginas-web-6.jpg) ;
+
+}
+
+.title{
+    text-align: center;
+    font-family: 'roboto';
+    color: white;
+}
+
+.subtitle{
+    justify-content: space-between;
+    color: white;
+}
+
+.q{
+    color: white;
+}
+
+.button{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'open sans';
+    width: 10%;
+    padding: 8px;
+    border: 5px;
+    border-radius: 5px;
+    background-color: #21BF17;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 100;
+    transition: all 0.5s ease;
+}
+
+.header{
+    background: linear-gradient(150deg, #21BF17, rgba(93, 203, 218, 0.333));
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'open sans';
+    color: white;
+}
+
+.container-header{
+    margin-left: 3px;
+    font-size: 1rem;
+}
+
+
